@@ -63,7 +63,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #610B0B;
 }
 
 hr.star-primary {
@@ -82,7 +82,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+
+    background-image: url("../img/newyork.JPG");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 header .container {
@@ -129,6 +134,9 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+
+        color: #fff
+
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -136,6 +144,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        color: #fff;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -151,6 +160,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #F3F781;
 }
 
 .navbar a:focus {
@@ -158,6 +168,7 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
+    color: #F3F781;
     letter-spacing: 1px;
 }
 
@@ -254,10 +265,20 @@ section.success a.active {
     z-index: 2;
 }
 
+
+#portfolio{
+  background-color: #D8D8D8;
+}
+
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+}
+
+#about{
+  background-color: #F3F781;
 }
 
 .btn-outline {
