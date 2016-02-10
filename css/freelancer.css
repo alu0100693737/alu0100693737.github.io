@@ -63,7 +63,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #000000;
+    background-color: #610B0B;
 }
 
 hr.star-primary {
@@ -81,8 +81,12 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #0B3861;
-    background: #F4FA58;
+    color: #fff;
+    background-image: url("../img/newyork.JPG");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 header .container {
@@ -129,7 +133,7 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-        color: #F3F781
+        color: #fff
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -137,7 +141,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        color: #F3F781;
+        color: #fff;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -184,7 +188,7 @@ section h2 {
 }
 
 section.success {
-    color: #0B3861;
+    color: #fff;
     background: #18bc9c;
 }
 
