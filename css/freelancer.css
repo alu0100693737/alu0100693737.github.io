@@ -63,7 +63,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #000000;
 }
 
 hr.star-primary {
@@ -81,8 +81,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #0B3861;
+    background: #F4FA58;
 }
 
 header .container {
@@ -129,6 +129,7 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        color: #F3F781
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -136,6 +137,7 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+        color: #F3F781;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -151,6 +153,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    color: #F3F781;
 }
 
 .navbar a:focus {
@@ -158,6 +161,7 @@ header .intro-text .skills {
 }
 
 .navbar .navbar-nav {
+    color: #F3F781;
     letter-spacing: 1px;
 }
 
@@ -180,7 +184,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #0B3861;
     background: #18bc9c;
 }
 
