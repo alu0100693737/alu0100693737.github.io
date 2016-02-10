@@ -262,12 +262,18 @@ section.success a.active {
     z-index: 2;
 }
 
+#portfolio{
+  background-color: #D8D8D8;
+}
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
-
+#about{
+  background-color: #F3F781;
+}
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
