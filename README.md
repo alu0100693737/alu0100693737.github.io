@@ -1,5 +1,4 @@
 # Pag Personal. #
-CSV ANALYZER    [![Build Status](https://travis-ci.org/alu0100693737/alu0100693737.github.io.svg)](https://travis-ci.org/alu0100693737/alu0100693737.github.io)
 
 Nota: esta pagina ha sido desarrollada usando Marckdown.
 --------------------------------------------------------
