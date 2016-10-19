@@ -85,7 +85,7 @@ header {
     text-align: center;
     color: #fff;
 
-    background-image: url("../img/newyork.jpg");
+    background-image: url("../img/background/fondo1.jpg");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -535,22 +535,6 @@ footer .footer-below {
     opacity: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -613,4 +597,40 @@ footer .footer-below {
 .about-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+  @keyframes cf3FadeInOut {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+  }
+
+#cf3 img.top {
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
 }
