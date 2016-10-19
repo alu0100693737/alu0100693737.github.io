@@ -84,12 +84,13 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-
-    background-image: url("../img/background/fondo1.jpg");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
+}
+header #perfil {
+  border-radius: 40%;
 }
 
 header .container {
@@ -97,11 +98,49 @@ header .container {
     padding-bottom: 50px;
 }
 
+@keyframes cf3FadeInOut {
+    0% {
+      background-image: url("../img/background/fondo1.jpg");
+    }
+    27% {
+      background-image: url("../img/background/fondo1.jpg");
+    }
+    33% {
+        background-image: url("../img/background/fondo2.jpg");
+    }
+    60% {background-image: url("../img/background/fondo2.jpg");
+    }
+    66% {
+        background-image: url("../img/background/fondo3.jpg");
+    }
+    85%{
+      background-image: url("../img/background/fondo3.jpg");
+    }
+    90% {
+
+        background-image: url("../img/background/fondo4.jpg");
+    }
+    100% {
+      background-image: url("../img/background/fondo4.jpg");
+    }
+  }
+
+header {
+    transition: opacity 1s ease-out;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: alternate;
+}
+
 header img {
     display: block;
     margin: 0 auto 20px;
 }
-
+header .name:hover {
+  color: #610B0B
+}
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -597,40 +636,4 @@ footer .footer-below {
 .about-modal .modal-backdrop {
     display: none;
     opacity: 0;
-}
-
-#cf {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:0 auto;
-}
-
-#cf img {
-  position:absolute;
-  left:0;
-  transition: opacity 1s ease-in-out;
-}
-
-  @keyframes cf3FadeInOut {
-    0% {
-        opacity:1;
-    }
-    45% {
-        opacity:1;
-    }
-    55% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-  }
-
-#cf3 img.top {
-    animation-name: cf3FadeInOut;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-direction: alternate;
 }
