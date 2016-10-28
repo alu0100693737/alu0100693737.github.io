@@ -272,7 +272,46 @@ section.success a.active {
         padding-top: 75px;
     }
 }
+#about {
+  background: rgba(20,20,20,1);
+background: -moz-linear-gradient(left, rgba(20,20,20,1) 12%, rgba(26,26,26,1) 30%, rgba(18,18,18,1) 39%, rgba(14,14,14,1) 56%, rgba(10,10,10,1) 76%, rgba(10,10,10,1) 76%, rgba(5,5,5,1) 89%, rgba(8,8,8,1) 91%, rgba(5,5,5,1) 92%, rgba(5,5,5,1) 95%);
+background: -webkit-gradient(left top, right top, color-stop(12%, rgba(20,20,20,1)), color-stop(30%, rgba(26,26,26,1)), color-stop(39%, rgba(18,18,18,1)), color-stop(56%, rgba(14,14,14,1)), color-stop(76%, rgba(10,10,10,1)), color-stop(76%, rgba(10,10,10,1)), color-stop(89%, rgba(5,5,5,1)), color-stop(91%, rgba(8,8,8,1)), color-stop(92%, rgba(5,5,5,1)), color-stop(95%, rgba(5,5,5,1)));
+background: -webkit-linear-gradient(left, rgba(20,20,20,1) 12%, rgba(26,26,26,1) 30%, rgba(18,18,18,1) 39%, rgba(14,14,14,1) 56%, rgba(10,10,10,1) 76%, rgba(10,10,10,1) 76%, rgba(5,5,5,1) 89%, rgba(8,8,8,1) 91%, rgba(5,5,5,1) 92%, rgba(5,5,5,1) 95%);
+background: -o-linear-gradient(left, rgba(20,20,20,1) 12%, rgba(26,26,26,1) 30%, rgba(18,18,18,1) 39%, rgba(14,14,14,1) 56%, rgba(10,10,10,1) 76%, rgba(10,10,10,1) 76%, rgba(5,5,5,1) 89%, rgba(8,8,8,1) 91%, rgba(5,5,5,1) 92%, rgba(5,5,5,1) 95%);
+background: -ms-linear-gradient(left, rgba(20,20,20,1) 12%, rgba(26,26,26,1) 30%, rgba(18,18,18,1) 39%, rgba(14,14,14,1) 56%, rgba(10,10,10,1) 76%, rgba(10,10,10,1) 76%, rgba(5,5,5,1) 89%, rgba(8,8,8,1) 91%, rgba(5,5,5,1) 92%, rgba(5,5,5,1) 95%);
+background: linear-gradient(to right, rgba(20,20,20,1) 12%, rgba(26,26,26,1) 30%, rgba(18,18,18,1) 39%, rgba(14,14,14,1) 56%, rgba(10,10,10,1) 76%, rgba(10,10,10,1) 76%, rgba(5,5,5,1) 89%, rgba(8,8,8,1) 91%, rgba(5,5,5,1) 92%, rgba(5,5,5,1) 95%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141414', endColorstr='#050505', GradientType=1 );
 
+}
+
+#aboutme {
+  margin: 0% 10%;
+}
+
+#aboutme h2 {
+  padding: 20px 30px;
+}
+
+#aboutme li {
+  padding: 10px 0px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    border: 1px solid black;
+    background-color: #18bc9c;
+}
+
+td :hover {
+  background-color: #18bc9c;
+}
+table {
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
