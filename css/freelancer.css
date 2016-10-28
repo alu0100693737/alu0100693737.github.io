@@ -90,54 +90,69 @@ header {
     background-repeat: no-repeat;
 }
 header #perfil {
-  border-radius: 10px;
-  padding-right: 30px;
+  border-radius: 0px 10px;
+  border: double #18bc9c;
 }
 
 header .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 @keyframes cf3FadeInOut {
     0% {
       background-image: url("../img/background/fondo1.jpg");
     }
-    27% {
+    8% {
       background-image: url("../img/background/fondo1.jpg");
     }
-    33% {
+    16% {
         background-image: url("../img/background/fondo2.jpg");
     }
-    60% {background-image: url("../img/background/fondo2.jpg");
+    24% {background-image: url("../img/background/fondo2.jpg");
     }
-    66% {
-        background-image: url("../img/background/fondo3.jpg");
-    }
-    85%{
+    32% {
       background-image: url("../img/background/fondo3.jpg");
     }
-    90% {
-
+    40% {
+      background-image: url("../img/background/fondo3.jpg");
+    }
+    48% {
         background-image: url("../img/background/fondo4.jpg");
     }
+    56% {background-image: url("../img/background/fondo4.jpg");
+    }
+    64% {
+        background-image: url("../img/background/fondo5.jpg");
+    }
+    70%{
+      background-image: url("../img/background/fondo5.jpg");
+    }
+    78% {
+
+        background-image: url("../img/background/fondo6.jpg");
+    }
+    87% {
+      background-image: url("../img/background/fondo6.jpg");
+    }
+    94% {
+
+        background-image: url("../img/background/fondo7.jpg");
+    }
     100% {
-      background-image: url("../img/background/fondo4.jpg");
+      background-image: url("../img/background/fondo7.jpg");
     }
   }
 
 header {
-    transition: opacity 1s ease-out;
+    transition: all 0.1s ease-out;
     animation-name: cf3FadeInOut;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-duration: 20s;
+    animation-duration:70s;
     animation-direction: alternate;
 }
 
-header img {
-    margin: 0 auto 20px;
-}
 header .name:hover {
   color: #18bc9c;
 }
@@ -147,14 +162,19 @@ header .intro-text .name {
     font-size: 2em;
     font-weight: 700;
     border-style: dotted solid dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px;
     padding: 10px;
     background-color: rgba(0, 0, 0, .4);
+}
+
+header #description :hover {
+  text-decoration: underline;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
-
 }
 
 @media(min-width:768px) {
@@ -172,10 +192,10 @@ header .intro-text .skills {
         font-size: 1.75em;
     }
 }
-
+/*nav navbar-fixed-top*/
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 20px 0;
+        padding: 10px 0;
         transition: padding .3s;
         color: #fff
     }
@@ -187,11 +207,11 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 0px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 }
 
