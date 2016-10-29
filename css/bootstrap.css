@@ -1345,7 +1345,7 @@ mark,
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #1a242f;
+  color: black;
 }
 .text-success {
   color: #ffffff;
@@ -4055,7 +4055,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ecf0f1;
-  border-color: #18bc9c;
+  border-color: #FF9009;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4375,9 +4375,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 9.75px -15px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 21px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 5px;
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -5530,7 +5530,6 @@ button.list-group-item-danger.active:focus {
   color: inherit;
 }
 .panel-footer {
-  padding: 10px 15px;
   background-color: #ecf0f1;
   border-top: 1px solid #ecf0f1;
   border-bottom-right-radius: 3px;
