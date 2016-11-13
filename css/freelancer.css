@@ -90,6 +90,8 @@ header {
   background-repeat: no-repeat;
 }
 header #perfil {
+  height: 12%;
+  width: 15%;
   border-radius: 0px 10px;
   border: double #C1E1A6;
 }
@@ -177,8 +179,8 @@ header .name:hover {
 header .intro-text .name {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 2em;
-  font-weight: 700;
+  font-size:20px;
+  font-weight: 300;
   border-style: dotted solid dashed;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 20px;
