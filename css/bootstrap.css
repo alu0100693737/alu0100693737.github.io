@@ -4360,11 +4360,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
-  height: 2px;
+  height: 0.5%;
   border-radius: 1px;
 }
 .navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
+
 }
 @media (min-width: 768px) {
   .navbar-toggle {
