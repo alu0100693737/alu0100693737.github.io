@@ -160,9 +160,7 @@ hr {
 #cabecera {
   background-image: url("../img/background/fondo1.jpg");
   background-size: cover;
-  width: 100%;
   height: auto;
-  height: 700px;
   transition: all 0.1s ease-out;
   animation-name: cf3FadeInOut;
   animation-timing-function: ease-out;
@@ -339,7 +337,7 @@ section.success a.active {
 }
 
 #about h2 {
-  padding: 20px 30px;
+  padding: 2% 4%;
 }
 
 #about li {
@@ -350,7 +348,7 @@ section.success a.active {
   color: black;
   padding: 10px;
   opacity: 0.69;
-  padding-left: 10%;
+  padding-left: 6%;
 }
 
 boxes :hover{
@@ -358,12 +356,12 @@ boxes :hover{
 }
 
 table {
-  width: 80%;
+  width: 90%;
   box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.6);
 }
 
 th {
-  height: 30px; width: 100px;
+  height: 30px; width: 20%;
   text-align: center;
 }
 
