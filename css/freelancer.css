@@ -4,8 +4,12 @@
 * For details, see http://www.apache.org/licenses/LICENSE-2.0.
 */
 
+* {
+    margin:0;
+}
+
 body {
-  overflow-x: hidden;
+  height:100%;
 }
 
 p {
@@ -82,68 +86,30 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 
-header {
+.header {
   text-align: center;
   color: #fff;
-  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 100%;
+  z-index: 10000;
 }
-header #perfil {
+
+.header #perfil {
   height: 12%;
   width: 15%;
   border-radius: 0px 10px;
   border: double #C1E1A6;
 }
 
-header .container {
+.header .container {
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-@keyframes cf3FadeInOut {
-  0% {
-    background-image: url("../img/background/fondo1.jpg");
-  }
-  8% {
-    background-image: url("../img/background/fondo1.jpg");
-  }
-  16% {
-    background-image: url("../img/background/fondo2.jpg");
-  }
-  24% {background-image: url("../img/background/fondo2.jpg");
-}
-32% {
-  background-image: url("../img/background/fondo3.jpg");
-}
-40% {
-  background-image: url("../img/background/fondo3.jpg");
-}
-48% {
-  background-image: url("../img/background/fondo4.jpg");
-}
-56% {background-image: url("../img/background/fondo4.jpg");
-}
-64% {
-  background-image: url("../img/background/fondo5.jpg");
-}
-70%{
-  background-image: url("../img/background/fondo5.jpg");
-}
-78% {
-
-  background-image: url("../img/background/fondo6.jpg");
-}
-87% {
-  background-image: url("../img/background/fondo6.jpg");
-}
-94% {
-
-  background-image: url("../img/background/fondo7.jpg");
-}
-100% {
-  background-image: url("../img/background/fondo7.jpg");
-}
+.header div {
+  opacity: 1;
+  z-index: 1000;
 }
 
 
@@ -157,24 +123,153 @@ hr {
   border-width: 1px;
 }
 
-#cabecera {
-  background-image: url("../img/background/fondo1.jpg");
-  background-size: cover;
-  height: auto;
-  transition: all 0.1s ease-out;
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  animation-duration:70s;
-  animation-direction: alternate;
+.fondos, .fondos:after {
+  top: 0px;
+  left: 0px;
   border-bottom: solid 5px #585858;
+  background-image: url(../img/background/fondo1.jpg) no-repeat;
+  background-repeat: none;
 
+  width: 100%;
+  height: 900px;
+}
+.fondos:after {
+   background: transparent url("../img/background/fondo1.jpg") no-repeat;
+   background-size: cover;
+   background-repeat: none;
+  height: 900px;
 }
 
-header .name:hover {
+.fondos li span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: auto;
+    /*background-position: 50% 50%;*/
+    background-repeat: none;
+    opacity: 0;
+    animation: imageAnimation 40s linear infinite 0s;
+    width: 100%;
+    height: 100%;
+}
+
+.fondos li div {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+
+    color: #fff;
+    animation: titleAnimation 30s linear infinite 0s;
+}
+
+.fondos li:nth-child(1) span {
+    background-image: url(../img/background/fondo1.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+
+}
+.fondos li:nth-child(2) span {
+    background-image: url(../img/background/fondo2.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 7s;
+}
+.fondos li:nth-child(3) span {
+    background-image: url(../img/background/fondo3.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 14s;
+}
+.fondos li:nth-child(4) span {
+    background-image: url(../img/background/fondo4.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 21s;
+}
+.fondos li:nth-child(5) span {
+    background-image: url(../img/background/fondo5.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 28s;
+}
+.fondos li:nth-child(6) span {
+    background-image: url(../img/background/fondo6.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 35s;
+}
+.fondos li:nth-child(7) span {
+    background-image: url(../img/background/fondo7.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    animation-delay: 42s;
+}
+
+.fondos li:nth-child(1) div {
+
+}
+.fondos li:nth-child(2) div {
+    animation-delay: 6s;
+}
+.fondos li:nth-child(3) div {
+    animation-delay: 12s;
+}
+
+.fondos li:nth-child(4) div {
+    animation-delay: 18s;
+}
+.fondos li:nth-child(5) div {
+    animation-delay: 24s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .fondos li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+    .fondos li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) {
+    .fondos li div h3 { font-size: 80px }
+}
+
+.header .name:hover {
   color: #C1E1A6;
 }
-header .intro-text .name {
+.header .intro-text .name {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:20px;
@@ -186,16 +281,16 @@ header .intro-text .name {
   background-color: rgba(0, 0, 0, .4);
 }
 
-header #description :hover {
+.header #description :hover {
   text-decoration: underline;
   color: #C1E1A6;
 }
 
-header .intro-text .skills {
+.header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
-
+/*
 @keyframes animate {
   0% {
     background-image: url("../img/background/fondo1.jpg");
@@ -240,18 +335,18 @@ header .intro-text .skills {
   background-image: url("../img/background/fondo7.jpg");
 }
 }
-
+*/
 @media(min-width:768px) {
-  header .container {
+  .header .container {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 
-  header .intro-text .name {
+  .header .intro-text .name {
     font-size: 4.75em;
   }
 
-  header .intro-text .skills {
+  .header .intro-text .skills {
     font-size: 1.75em;
   }
 }
@@ -305,6 +400,12 @@ header .intro-text .skills {
 
 section {
   padding: 50px 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cabecera {
+  height: 800px;
 }
 
 section h2 {
@@ -348,7 +449,7 @@ section.success a.active {
   color: black;
   padding: 10px;
   opacity: 0.69;
-  padding-left: 6%;
+  margin-left: 3%;
 }
 
 boxes :hover{
@@ -356,12 +457,12 @@ boxes :hover{
 }
 
 table {
-  width: 90%;
+  width: 80%;
   box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.6);
 }
 
 th {
-  height: 30px; width: 20%;
+  height: 30px; width: 5%;
   text-align: center;
 }
 
@@ -436,7 +537,6 @@ tr :hover {
   width: 100%;
   height: 100%;
   opacity: 0;
-
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   transition: all ease .5s;
