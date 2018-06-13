@@ -95,11 +95,8 @@ hr.star-primary:after {
   opacity: 1;
   z-index: 3;
   padding-top: 5%;
-
   margin-left: auto;
-    margin-right: auto;
-
-
+  margin-right: auto;
 
 }
 
@@ -284,7 +281,7 @@ hr {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 20px;
   padding: 10px;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .3);
 }
 
 .header #description :hover {
@@ -412,6 +409,7 @@ section {
 
 #cabecera {
   height: 700px;
+  color: white;
 }
 
 section h2 {
